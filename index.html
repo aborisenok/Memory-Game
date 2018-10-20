@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="css/normalize.css">  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="left-side-block">
+      <div class="level">
+        <div class="level-size active" data-level="easy-mode">
+          <span>Easy<br>3x2</span>
+        </div>
+        <div class="level-size" data-level="normal-mode">
+          <span>Normal<br>4x3</span>
+        </div>
+        <div class="level-size" data-level="hard-mode">
+          <span>Hard<br>5x4</span>
+        </div>
+        <div class="level-size" data-level="extreme-mode">
+          <span>Extreme<br>6x6</span>
+        </div>
+      </div>
+      <div class="view">
+
+          <!-- Blocks will be here -->
+
+      </div>
+    </div>
+    
+    <div class="central-block width-normal">
+      <div class="intro">
+        <h2>How to play</h2>
+        <p>Memory is a computer game where the object is to find pairs.</p>
+        <p>When the game begins, all pictures are hidden</p>
+        <h2>To Play</h2>
+        <p>
+          1.Select two cards to try to match the pictures<br>
+          2.If you match the pictures you go next<br>
+          3.If they don't match it is then you can try again<br>
+          4.When you find all pairs you win<br>
+          5.Have fun!
+        </p>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="" placeholder="Your Name">
+        </form>
+        <a href="#" class="button start">Play</a>
+        
+      </div> 
+
+      <div class="play-zone hide">
+        <div class="bar">
+          <a href="#" class="button restart-game">Restart</a>
+          <div class="steps">Steps: 0</div>
+          <div class="timer"></div>
+          <a href="#" class="button menu-game">Menu</a>
+        </div>
+        <div class="cards-field">
+     
+          <!-- Blocks will be here -->
+
+        </div>
+      </div>  
+    </div>
+    
+    <div class="right-side-block">
+      <table class="scores-table">
+        <caption>Scores</caption>
+        <tr>
+          <th>Name</th>
+          <th>Difficulty</th>
+          <th>Time</th>
+          <th>Steps</th>
+        </tr>
+        <!-- rows -->
+      </table>
+    </div>
+  </div>
+  
+  <div class="modal">
+  <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+         <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+       You Win!!!
+      </div>
+      <div class="modal-result"></div>
+      <div class="modal-footer">
+        <a href="#" class="button restart-modal">Restart</a>
+        <a href="#" class="button menu-modal">Menu</a>
+       </div> 
+    </div>
+  </div>
+  <script type="text/javascript" src="js/save.js"></script>
+  <script type="text/javascript" src="js/control.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
+  <script type="text/javascript" src="js/steps.js"></script>
+  <script type="text/javascript" src="js/timer.js"></script>
+  
+  <script type="text/javascript" src="js/main.js"></script>
+ 
+  </body>
+</html>
